@@ -1,0 +1,62 @@
+body{
+    font-family: "Fira Sans", sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 100%;
+
+}
+.header{
+    background: rgb(255, 255, 255);
+    height: 120px;
+}
+.nav{
+    background: #EB9605;
+    height:80px ;
+    
+}
+.footer{
+    background: rgb(255, 255, 255);
+    height:135px ;
+    text-align: left;
+    
+}
+.main{  
+    padding:10px;
+    text-align: center;
+    background: rgb(245, 245, 96) ;
+}
+.waw{
+    display: flex;
+}
+.aside1{
+    background: #EB9605;
+    
+}
+/* tampilan responsif */
+@media all and ( min-width :800px){
+    .main{
+        flex: 2 ;
+    }
+    .aside1{
+        order: 2 ;
+    }
+    .main{
+        order:1;
+    }
+    .footer{
+        order:4;
+    }}
+    @media all and (min-width:600px){
+        .aside1{
+            flex:1;
+        }
+    }
